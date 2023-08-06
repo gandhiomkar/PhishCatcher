@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Hello Extensions",
+  "description": "Base Level Extension",
+  "version": "1.0",
+  "action": {
+    "default_popup": "hello.html"
+    },
+  
+    "permissions": [
+      "activeTab","tabs","webRequest"
+    ],
+
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["scripts/extension.js"]
+      }
+    ]
+  
+    
+}
+  
